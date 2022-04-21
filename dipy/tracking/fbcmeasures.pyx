@@ -133,7 +133,7 @@ cdef class FBCMeasures:
                 lfbc_colors = np.transpose([fr(lfbc), fg(lfbc), fb(lfbc)])
                 color_out.append(lfbc_colors.tolist())
 
-        return streamline_out, color_out, rfbc_out
+        return streamline_out, lfbc, rfbc_out
 
     @cython.wraparound(False)
     @cython.boundscheck(False)
